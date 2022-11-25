@@ -1,0 +1,81 @@
+body {
+    background-color: #808080;
+}
+
+h1 {
+    color: #ff7d00;
+    background-color: #6a6a6a;
+    text-align: center;
+    font-weight: normal;
+    font-size: 72px;
+    padding: 12px;
+    margin: 72px 36px 0;
+}
+img {
+    display: block;
+    margin: auto;
+}
+
+.mainText {
+    background-color: #bfbfbf;
+    padding: 12px;
+    margin: 0 36px;
+}
+ul.mainText {
+    padding-left: 36px;
+}
+table.mainText {
+    border: 1px solid black;
+}
+th, td {
+    text-align: left;
+    padding: 6px;
+}
+a:link {
+    color: #000000;
+}
+a:visited {
+    color: #000000;
+}
+a:hover {
+    color: #ff7d00;
+}
+a:active {
+    color: #ffff00;
+}
+#left {
+    background-color: #a6a6a6;
+}
+#right {
+    background-color: #a6a6a6;
+}
+#mid {
+    background-color: #ff7d00;
+}
+.content {
+    width: 20vw;
+    height: 20vw;
+    float: left;
+    margin: 2vw;
+    border-radius: 2vw;
+    border: solid 2px #fff;
+    box-shadow: 0 6px 12px 3px rgba(0,0,0,0.4);
+    cursor: pointer;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    -moz-transition: background-color 0.2s ease-in-out;
+    -o-transition: background-color 0.2s ease-in-out;
+    -khtml-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+}
+#textBox {
+    clear: left;
+    margin: 2vw 26vw;
+    line-height: 5vw;
+}
+#clickCounter {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 8vw;
+    font-weight: 300;
+    color: #ff7d00;
+    text-align: center;
+}

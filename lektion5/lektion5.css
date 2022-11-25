@@ -1,0 +1,107 @@
+body {
+	background-color: #a6a6a6;
+	min-width: 1110px;
+}
+
+h1 {
+	color: #ff7d00;
+	background-color: #6a6a6a;
+	text-align: center;
+	font-weight: normal;
+	font-size: 72px;
+	padding: 12px;
+	margin: 72px 36px 0;
+	width: 967px;
+}
+
+.mainText {
+	background-color: #bfbfbf;
+	padding: 12px;
+	margin: 0 36px;
+	width: 967px;
+}
+
+img {
+	display: block;
+	margin: auto;
+}
+
+ul.mainText {
+	padding-left: 36px;
+}
+
+table {
+    background-color: #6a6a6a;
+}
+
+th, td {
+	text-align: left;
+	vertical-align: top;
+    padding: 6px;
+    border: 1px solid #6a6a6a;
+}
+
+th {
+	font-weight: 600;
+}
+
+th:nth-child(odd), td:nth-child(odd) {
+    background-color: rgba(255,125,0,0.5);
+}
+th:nth-child(even), td:nth-child(even) {
+    background-color: rgba(166,166,166,0.5);
+}
+
+#red {
+	color: red;
+}
+#blue {
+	color: blue;
+}
+#yellow {
+	color: yellow;
+}
+#pink {
+	color: pink;
+}
+#green {
+	color: green;
+}
+#white {
+	color: white;
+}
+#purple {
+	color: purple;
+}
+#black {
+	color: black;
+}
+#cyan {
+	color: cyan;
+}
+#magenta {
+	color: magenta;
+}
+#orange {
+	color: orange;
+}
+#gray {
+	color: gray;
+}
+
+
+a:link {
+    color: #000000;
+}
+
+a:visited {
+    color: #000000;
+}
+
+a:hover {
+    color: #ff7d00;
+}
+
+a:active {
+    color: #FFFF00;
+}

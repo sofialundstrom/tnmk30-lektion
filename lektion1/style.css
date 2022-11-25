@@ -1,0 +1,45 @@
+body {
+    background-color: #808080;
+}
+
+h1 {
+    color: #ff7d00;
+    background-color: #6a6a6a;
+    text-align: center;
+    font-weight: normal;
+    font-size: 72px;
+    padding: 12px;
+    margin: 72px 36px 0;
+}
+img {
+    display: block;
+    margin: auto;
+}
+
+.mainText {
+    background-color: #bfbfbf;
+    padding: 12px;
+    margin: 0 36px;
+}
+ul.mainText {
+    padding-left: 36px;
+}
+table.mainText {
+    border: 1px solid black;
+}
+th, td {
+    text-align: left;
+    padding: 6px;
+}
+a:link {
+    color: #000000;
+}
+a:visited {
+    color: #000000;
+}
+a:hover {
+    color: #ff7d00;
+}
+a:active {
+    color: #ffff00;
+}
