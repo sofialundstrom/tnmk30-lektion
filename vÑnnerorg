@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Vänner</title>
+</head>
+<body class="övnignar">
+
+<?php 
+	// Koppla upp databasen
+	$conn = mysqli_connect('localhost', 'root', '', 'geografi');
+
+	// Kontrollera uppkopplingen
+	if (!$conn) {
+		echo "Uppkopplingsfel mot databasen:" . mysqli_connect_error();
+    	exit();
+	}
+
+	// Byt teckentabell till utf-8 och kontrollera om det fungerade
+	if (!mysqli_set_charset($conn, 'utf8')) {
+    	echo "Det blev fel vid ändring av teckentabell: ";
+    	echo mysqli_error($conn);
+	} 
+
+		if (isset($_GET['stad'])) {
+		if ($_GET['stad'] != "") {
+			$resultstad = mysqli_query($conn, $sqlstad);	
+		}
+	}
+
+	$sqlstad = "SELECT stad, stadID FROM städer ORDER BY stad";
+	$resultstad = mysqli_query($conn, $sqlstad);
+	$städer = mysqli_fetch_all($resultstad, MYSQLI_ASSOC);
+	?>
+
+	<div class="leaderboard">
+		<?php include('../php/header.php'); ?>
+	    <h2>LEADERBOARD</h2>
+	    <table class="etta">
+	    <?php 
+	    for($j=1; $j < 4; $j++) {
+	    	for ($i = 0; $i < 3; $i++) {
+				if ($i == 0) {
+					echo "<td>"  . "$j. " . $städer[$j - 1]['stad'] . "</td>";
+				}
+			}	
+	    }
+		?>
+		</table>
+	</div>
+    <?php include('../php/footer.php'); ?>
+</body>
+</html>
+
+
